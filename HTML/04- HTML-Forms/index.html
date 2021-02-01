@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- What is a form - A way of collecting/getting information -->
+    <!-- action- whenthe from is submitted where should it go? -->
+    <!-- Method- how the information will passed to the server!  -->
+    <!-- GET- data is passed to the URL or the request -->
+    <!-- POST- information is passed in the messagge of the body of the request. -->
+
+    <form method="GET" action="">
+        <input>
+            <legend>Personal info</legend>
+            <label>Enter your id Number:</label>
+            <input type="number" name="idNumber">
+            <label>Enter your username:</label>
+            <input type="text" name="userName">
+            <label>Enter your password:</label>
+            <input type="password" name="password">
+            <label>Enter your email:</label>
+            <input type="email" name="email" required>
+            <label>Enter your telephone:</label>
+            <input type="tel" name="tel">
+            <label>Enter your website url:</label>
+            <input type="url" name="url">
+            <label>what handed?</label>
+            <input type="radio" id="lHand" name="hand">Left handed</input>
+            <input type="radio" id="rHand" name="hand">Right handed</input>
+            <input type="radio" id="both" name="hand">Both handed</input>
+        </fieldset>
+        <input>
+            <legend>preferences</legend>
+            <label>pick your goto(s)</label>
+            <input type="checkbox">KFC</input>
+            <input type="checkbox">BK</input>
+            <input type="checkbox">McDonalds</input>
+            <input type="checkbox">Nandos</input>
+
+            <br>
+            <input list="cars">
+            <datalist id="cars">
+                <option value="A5">Audi A5</option>
+                <option value="A7">Audi A7</option>
+                <option value="A3">Audi A3</option>
+                <option value="bmw330">BMW 330i</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Misc</legend>
+            <label>DOB</label>
+            <input type="date"></input>
+            <label>colour</label>
+            <input type="color"></input>
+            <br>
+            <label>Lots of text</label>
+            <textarea rows="10" cols="50">
+               
+            </textarea>
+            <select id="cars" name="cars" size ="2" multiple>
+                <option value="audi">Audi</option>
+                <option value="bmw" selected>Bmw</option>
+                <option value="mercedes">Mercedes</option>
+              </select>
+        </fieldset>
+
+
+        <button type="submit">post the data</button>
+        <button type="reset">clear</button>
+    </form>
+</body>
+</html>

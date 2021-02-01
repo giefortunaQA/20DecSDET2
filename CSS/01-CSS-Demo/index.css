@@ -1,0 +1,32 @@
+
+/* 
+* R - Red
+* G - Green
+* B - Blue
+* A - transparency
+*/
+/* 
+* H - Hue
+* S - Saturation
+* L - Lightness
+* A - Alpha - 
+*/
+
+/* Generic selector */
+h1,p ,ul {color: rgb(100, 10, 100);}
+
+body{
+    background-color: black;
+}
+
+
+/* Access an id */
+#anotherID{
+    color: lime;
+}
+
+/* access an class */
+.someInfo{
+    color: magenta;
+}
+
