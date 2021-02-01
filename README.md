@@ -66,3 +66,5 @@ This repository looks at some of the core foundation of web dev namely:
 <!-- * Pseudo Selectors
   * Selecting via attribute/state
 * Box Model -->
+
+`JavaScript`
