@@ -57,9 +57,11 @@ const myObj ={
 // .then((data)=>console.info(`Request was all good with json response ${data}`))
 // .catch((err)=> console.error(err));
 
-//? Fetch - DELETE
-fetch(`http://jsonplaceholder.typicode.com/posts/1`,{
-    method:"delete"
-})
-.then((data)=>console.info(`Request was all good with json response ${data}`))
-.catch((err)=> console.error(err));
+// //? Fetch - DELETE
+// fetch(`http://jsonplaceholder.typicode.com/posts/1`,{
+//     method:"delete"
+// })
+// .then((data)=>console.info(`Request was all good with json response ${data}`))
+// .catch((err)=> console.error(err));
+
+
