@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    margin-top: 30px;
+    text-size-adjust:300%
+}
+
+.crud, #displayBox{
+    padding:100px;
+    margin: 30px;
+    text-align: center;
+    border-radius:10px
+}
+
+a:link{
+    color:white;
+    text-decoration:none
+}
+
+
+
+#create{
+    background-color: rgb(89, 218, 168);
+}
+
+#read{
+    background-color: rgb(101, 208, 241);
+}
+
+#update{
+    background-color: rgb(228, 182, 98);
+}
+
+#delete{
+    background-color: rgb(243, 98, 98);
+}
+
+#main{
+    background-color:midnightblue
+}
