@@ -4,7 +4,7 @@ h1{
     text-size-adjust:300%
 }
 
-.crud, #displayBox{
+.crud, #displayBox, #info{
     padding:100px;
     margin: 30px;
     text-align: center;
@@ -16,7 +16,7 @@ a:link{
     text-decoration:none
 }
 
-#create{
+#create,#info{
     background-color: rgb(89, 218, 168);
 }
 
@@ -38,4 +38,8 @@ a:link{
 #displayBox{
     background-color:  rgb(175, 228, 245);
     text-size-adjust: 200px;
+}
+
+#info{
+    text-align: left;
 }
