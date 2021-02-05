@@ -61,11 +61,16 @@ let jsonObj ={
         {productName:"coke",price:1.00},
         {productName:"7up",price:1.00}
     ],
+    "asda":[
+        {productName:"coke",price:1.00},
+        {productName:"7up",price:1.00}
+    ],
     "zoo":[
         {petName: "Doggo",petType: "Dog",petColour: "Blue",breed: "collie"},
         {petName: "dontBite",petType: "Tarantula",petColour: "Purple",breed: "a.purpurea"},
     ]
 };
+console.log(jsonObj.asda);
 
 // console.log(jsonObj);
 let toAdd= {
@@ -75,7 +80,6 @@ let toAdd= {
 
 jsonObj.tesco.push(toAdd);
 
-// console.log(jsonObj.tesco);
 
 //converting an object to to a string
 

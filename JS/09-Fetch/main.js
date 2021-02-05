@@ -32,18 +32,17 @@ const getData=()=>{
                 return;
             }
             // console.log(`status was 200 hence ${response}`);
-            response.json()
-            .then((infoFromServer)=>{
-                // console.log(infoFromServer);
-                // console.log(infoFromServer.data);
-                for(let users of infoFromServer.data){
-                    console.log(users.id);
-                    console.log(users.email);
-                    console.log(users.first_name);
-                    console.log(users.last_name);
-                    console.log(users.avatar);
-                    printToScreen(users.email,users.first_name,users.avatar)
-                }
+            response.json().then((infoFromServer)=>{
+                console.log("infoserver",infoFromServer);
+                console.log("info server data",infoFromServer.data);
+                // for(let users of infoFromServer.data){
+                //     console.log(users.id);
+                //     console.log(users.email);
+                //     console.log(users.first_name);
+                //     console.log(users.last_name);
+                //     console.log(users.avatar);
+                //     printToScreen(users.email,users.first_name,users.avatar)
+                // }
             })
         }).catch((err)=>{
             console.error(err);
