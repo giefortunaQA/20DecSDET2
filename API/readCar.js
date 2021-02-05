@@ -8,7 +8,7 @@ const printToScreen = (car) => {
     for (let info in car) {
         carToDisplay.append("\n");
         let actualText = document.createTextNode(
-            `${info}: ${car[info]}, `);
+            `${info}: ${car[info]} `);
         console.log(info);
         console.log(car[info]);
         carBlock.append(actualText)
