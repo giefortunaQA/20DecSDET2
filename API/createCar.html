@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cars</title>
+    </head>
+    <body>
+        <form action="createCar.html" method="post">
+            <h1> Create a Car </h1>
+            <fieldset id ="info">
+                <legend><span class="number">1</span> Car Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="car_name">
+                <br>
+                <label for="make">Make:</label>
+                <input type="make" id="make" name="car_make">
+                <br>
+                <label for="model">Model:</label>
+                <input type="model" id="model" name="car_model">
+                <br>
+                <label for="doors">Doors:</label>
+                <input type="doors" id="doors" name="car_doors">
+                <br>
+                <label for="colour">Colour:</label>
+                <input type="colour" id="colour" name="car_colour">
+                <br>
+                <label for="garage">Garage Id for Storage:</label>
+                <input type="garage" id="garage" name="car_garage">
+            </fieldset>
+            <button type="submit" onclick ="createCar()">Create</button>
+        </form>
+        <script src = createCar.js></script>
+    </body>
+</html> 
