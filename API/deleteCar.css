@@ -1,0 +1,16 @@
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFjznIHWmPIlg4HjGPv6gBXzAWmrCtpVNffw&usqp=CAU');
+}
+
+h1{
+    color: red;
+    border-style: dotted;
+ }
+
+ p{
+
+    color: seagreen;
+    font-size: xx-large;
+    font-style:oblique;
+    font-weight: 900;
+ }

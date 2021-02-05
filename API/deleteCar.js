@@ -1,20 +1,20 @@
 'use strict'
 
-let id = 4;
 const p = document.createElement("p");
-const pInfo = document.createTextNode(`Deleted car id:${id}, all good `);
+const idV = document.querySelector('#getId')
+// console.log(idValue);
+//console.log(idV);
 
 // DELETE CAR
-      fetch("http://localhost:9092/car/delete/"+id, {
-          method: 'delete',
+function deleteCar(){
+  const idValue = idV.value;
+  fetch("http://localhost:9092/car/delete/"+idValue, {
+          method: 'delete',//3
         })
         .then((data) => {
-          console.log(`Deleted car all good ${data}`);
-            p.appendChild(pInfo)
-            document.body.appendChild(p)
+          console.log(`Car had been deleted ${data}`);
+          document.write("Deleted car :) All good!!!");
         })
-        .catch((error) => console.error(err),{
+        .catch((error) => {
         });
-
-
-
+      }
