@@ -1,16 +1,22 @@
-body{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFjznIHWmPIlg4HjGPv6gBXzAWmrCtpVNffw&usqp=CAU');
+h1{
+    text-align: center;
+    margin-top: 30px;
+    text-size-adjust:300%
 }
 
-h1{
-    color: red;
-    border-style: dotted;
- }
+.crud, #displayBox{
+    padding:100px;
+    margin: 30px;
+    text-align: center;
+    border-radius:10px
+}
 
- p{
+a:link{
+    color:white;
+    text-decoration:none
+}
 
-    color: seagreen;
-    font-size: xx-large;
-    font-style:oblique;
-    font-weight: 900;
- }
+
+body{
+    background-color:seagreen;
+} 
