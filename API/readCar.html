@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Read Car</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
-           
-        
+        <h1>VIEW CARS</h1>
         <div class="row">
             <div class="col">
-                <div class="crud" id="main">
+                <div class="crud" id="read">
                     <form action="get">
                         <label for="carId">
-                            Please enter a car id
+                            <h2>Please enter a car id</h2>
                         </label>
-                        <input type="text" id=carId>
+                        <br>
+                        <input type="text" id="carId">
                     </form>
-                    <button class="mybtn" onclick="readCarById()">
+                    <br>
+                    <button class="btn btn-light" onclick="readCarById()">
                         Search
                     </button>
                 </div>
             </div>
             <div class="col">
                 <div class="crud" id="displayBox">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut architecto ipsum libero adipisci earum error! Ipsa sed modi facere ad quidem non rem quia repellendus, nesciunt architecto, reprehenderit maxime eaque?
+                    <p id="carPara">
+                        
                     </p>
                 </div>
             </div>

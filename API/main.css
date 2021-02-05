@@ -37,3 +37,7 @@ a:link{
 #main{
     background-color:midnightblue
 }
+#displayBox{
+    background-color:  rgb(175, 228, 245);
+    text-size-adjust: 200px;
+}
