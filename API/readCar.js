@@ -4,24 +4,24 @@ const carToDisplay = document.querySelector("#displayBox")
 const allCarsToDisplay = document.querySelector("#displayBoxAll")
 const givenId = document.querySelector("#carId")
 
-const printToScreen =(car) => {
+const printToScreen = (car) => {
     for (let info in car) {
         let actualText = document.createTextNode(
             `${info}: ${car[info]} `
-            );
-        console.log(info+":" +car[info]);
+        );
+        console.log(info + ":" + car[info]);
         carToDisplay.append(actualText)
     }
-   
+
 }
 
-const printToScreenAll=(cars)=>{
-    for (let car in cars){
-        for (let info in cars){
+const printToScreenAll = (cars) => {
+    for (let car of cars) {
+        for (let info in car) {
             let actualText = document.createTextNode(
                 `${info}: ${car[info]} `
-                );
-            console.log(info+":" +car[info]);
+            );
+            console.log(info + ":" + car[info]);
             allCarsToDisplay.append(actualText)
         }
     }
@@ -31,7 +31,7 @@ const printToScreenAll=(cars)=>{
 
 
 const readCarById = () => {
-    carToDisplay.innerHTML="";
+    carToDisplay.innerHTML = "";
     const idVal = givenId.value;
     fetch("http://localhost:9092/car/read/" + idVal)
         .then((res) => {
@@ -56,9 +56,8 @@ const readAllCars = () => {
             res.json()
                 .then((data) => {
                     console.log(data);
-                    for (let car in data){
-                        printToScreenAll(car)
-                    }
+                    printToScreenAll(data)
+                    
                 }).catch((err) => console.log(err))
         })
 }
